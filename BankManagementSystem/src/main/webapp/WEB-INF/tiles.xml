@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">  
+       <tiles-definitions>
+         <definition name="homeBaseDef" template="/WEB-INF/pages/layout.jsp"  >
+             <put-attribute name="title"  value=""/>
+             <put-attribute name="header" value="/WEB-INF/pages/header.jsp"/>
+             <put-attribute name="menu" value="/WEB-INF/pages/homeMenu.jsp"/>
+             <put-attribute name="body"  value=""/>
+             <put-attribute name="footer" value="/WEB-INF/pages/footer.jsp"/>
+         </definition>
+         <definition name="homePageDef"  extends="homeBaseDef">
+              <put-attribute name="title" value="Home Page" />
+              <put-attribute name="body"  value="/WEB-INF/pages/home.jsp"/>
+         </definition>
+         <definition name="signupPageDef"  extends="homeBaseDef">
+              <put-attribute name="title" value="signup page 1" />
+              <put-attribute name="body"  value="/WEB-INF/pages/signup.jsp"/>
+         </definition>
+              <definition name="signupPageDef2"  extends="homeBaseDef">
+              <put-attribute name="title" value="signup page 3" />
+              <put-attribute name="body"  value="/WEB-INF/pages/signup2.jsp"/>
+         </definition>
+            <definition name="signupPageDef3"  extends="homeBaseDef">
+              <put-attribute name="title" value="signup page 3" />
+              <put-attribute name="body"  value="/WEB-INF/pages/signup3.jsp"/>
+         </definition>
+         <definition name="error"  extends="homeBaseDef">
+              <put-attribute name="title" value="error page" />
+              <put-attribute name="body"  value="/WEB-INF/pages/error.jsp"/>
+         </definition>
+         <definition name="signinPageDef"  extends="homeBaseDef">
+              <put-attribute name="title" value="signin page" />
+              <put-attribute name="body"  value="/WEB-INF/pages/login.jsp"/>
+         </definition>
+         
+         
+         
+       <!-- For Main menu page -->
+         <definition name="baseDef" template="/WEB-INF/pages/layout.jsp"  >
+             <put-attribute name="title"  value=""/>
+             <put-attribute name="header" value="/WEB-INF/pages/header.jsp"/>
+             <put-attribute name="menu" value="/WEB-INF/pages/menu.jsp"/>
+             <put-attribute name="body"  value=""/>
+             <put-attribute name="footer" value="/WEB-INF/pages/footer.jsp"/>
+         </definition>
+          <definition name="mainMenuBaseDef"  extends="baseDef">
+              <put-attribute name="title" value="main_menu" />
+              <put-attribute name="body"  value="/WEB-INF/pages/main_menu.jsp"/>
+         </definition>
+         <definition name="depositPageDef"  extends="baseDef">
+              <put-attribute name="title" value="deposit page" />
+              <put-attribute name="body"  value="/WEB-INF/pages/deposit.jsp"/>
+         </definition>
+         
+         <definition name="depositProcessPageDef"  extends="baseDef">
+              <put-attribute name="title" value="depositProcessPage" />
+              <put-attribute name="body"  value="/WEB-INF/pages/deposit_process.jsp"/>
+         </definition>
+         
+          <definition name="withdrawalPageDef"  extends="baseDef">
+              <put-attribute name="title" value="withdrawal page" />
+              <put-attribute name="body"  value="/WEB-INF/pages/withdrawal.jsp"/>
+         </definition>
+         
+         <definition name="withdrawalProcessPageDef"  extends="baseDef">
+              <put-attribute name="title" value="withdrawalProcessPage" />
+              <put-attribute name="body"  value="/WEB-INF/pages/cash_withdrawal_process.jsp"/>
+         </definition>
+         
+          <definition name="balanceEnquiryProcessPageDef"  extends="baseDef">
+              <put-attribute name="title" value="balance Enquiry page" />
+              <put-attribute name="body"  value="/WEB-INF/pages/balance_enquiry_process.jsp"/>
+         </definition>
+         
+          <definition name="transferMoneyPageDef"  extends="baseDef">
+              <put-attribute name="title" value="transfer money page" />
+              <put-attribute name="body"  value="/WEB-INF/pages/transfer_money.jsp"/>
+         </definition>
+         <definition name="transferMoneyProcessPageDef"  extends="baseDef">
+              <put-attribute name="title" value="transfer money process page" />
+              <put-attribute name="body"  value="/WEB-INF/pages/transfer_money_process.jsp"/>
+         </definition>
+         
+            <definition name="pinChangePageDef"  extends="baseDef">
+              <put-attribute name="title" value="pin change page" />
+              <put-attribute name="body"  value="/WEB-INF/pages/pin_change.jsp"/>
+              </definition>
+              
+              <definition name="pinChangeProcessPageDef"  extends="baseDef">
+              <put-attribute name="title" value="pin change process page" />
+              <put-attribute name="body"  value="/WEB-INF/pages/pin_change_process.jsp"/>
+         </definition>
+         
+         <definition name="miniStatementPageDef"  extends="baseDef">
+              <put-attribute name="title" value="get mini statement page" />
+              <put-attribute name="body"  value="/WEB-INF/pages/mini_statement.jsp"/>
+         </definition>
+         
+         <definition name="miniStatementProcessPageDef"  extends="baseDef">
+              <put-attribute name="title" value="get mini statement result page" />
+              <put-attribute name="body"  value="/WEB-INF/pages/mini_statement_process.jsp"/>
+         </definition>
+         
+       </tiles-definitions>
